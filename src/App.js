@@ -1,7 +1,11 @@
-import {QuestionPage} from "./components/QuestionPage/QuestionPage";
+import QuestionPageContainer from "./components/QuestionPage/QuestionPageContainer/QuestionPageContainer";
+import {Routes, Route} from "react-router-dom";
+
 function App() {
   return(
-  <QuestionPage/>
+        <Routes>
+          <Route path='/' element={<QuestionPageContainer/>} />
+        </Routes>
   )
 }
 
